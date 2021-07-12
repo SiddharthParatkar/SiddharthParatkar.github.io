@@ -1324,6 +1324,7 @@ input, select, textarea {
 				#header .content .inner > :last-child {
 					margin-bottom: 0;
 					color: #B2BADE;
+					font-size: 1.2rem;
 				}
 
 			#header .content p {
