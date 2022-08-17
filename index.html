@@ -68,6 +68,43 @@
 								<h2 class="major">Experiences</h2>
 								<ul class="alt">
 									<li>
+										<strong>SDE Intern @ Amazon AWS</strong>
+										<br><i>May 2022 - August 2022</i>
+										<br><br>The project that I was assigned to this summer was to enhance the MQTT Test Client. 
+										Firstly, I had to fix two bugs present in the client. The first bug was an issue with the 
+										client failing to reconnect after a period of time; after determining that the issue was most 
+										probably the possible chance that the keepalive timer of 5 minutes and the session ID expiry 
+										of 5 minutes could intersect and cause an expiry before the keepalive check happened, I 
+										updated both the keepalive time and the reconnecting time to ensure that the client would 
+										always be active while the tab was being used. The second bug turned out to be user error 
+										of sending various data through the test client, but working on the bug helped me understand 
+										how to send data properly through the client.
+
+										<br><br>My main feature was working on constructing a payload that would save its own state 
+										in the Redux data store and be associated with each topic that can be subscribed to within 
+										the test client. To do this, I spent some time figuring out the architecture of the test 
+										client, which helped me work with the UX team to design a payload. Then, for my implementation, 
+										I updated the existing interfaces to add fields that could store the information necessary, 
+										and in the parts of the test client that allowed for changes to be made to the payload, I 
+										added checks and dispatches to ensure the information in the store would always be up to date. 
+										This also involved changing the publishing flow of messages to the test client. I was able 
+										to finish my project by thoroughly testing each component I made and presenting to the rest 
+										of the AWS IoT.
+									</li>
+									<li>
+										<strong>15-213 Head TA @ CMU CS</strong>
+										<br><i>December 2021 - August 2022</i>
+										<br><br>15-213, Introduction to Computer Systems, is a class that builds on previous exposure to C 
+										and teaches students about the underpinnings of modern computer systems, such as caching, handling 
+										memory, bitwise operations, multi-threading and more. At the end of this summer, I will have TAed 15-213 for two consecutive semesters, one of those semesters (Summer 2022) as the Head TA.
+
+										<br><br>My responsibilities as TA include constructing weekly lesson plans for hour-long lab sessions where students work through lab problems and are taught the above topics
+										Also, I hold 4 hours minimum of weekly office hours to help students work through challenging problems and conceptual questions, as well as grade student code for style points.
+										Finally, I work on written and lab assignments throughout the semester to continually update course materials for current and future semesters.
+										
+										<br><br>As a Head TA for the Summer of 2022, I worked with the professors of the course to maintain course standards, coordinate weekly staff meetings, following up with Lead TAs on their parts of the course and making sure that the course runs smoothly.
+									</li>
+									<li>
 										<strong>SWE Intern @ JPMorgan Chase</strong>
 										<br><i>June 2021 - August 2021</i>
 										<br><br>The project for my internship is to work on a client-facing dashboard in an Agile environment, 
@@ -82,10 +119,13 @@
 										At the end of this internship, my team presented to executive directors at JPMorgan Chase, which decided that our presentation was a Top 2 Presentation among 31 teams from our location.
 									</li>
 									<li>
-										<strong>15-150 TA @ CMU</strong>
-										<br><i>January 2021 - August 2021</i>
+										<strong>15-150 TA @ CMU CS</strong>
+										<br><i>December 2020 - August 2021</i>
 										<br><br>
-										At the end of this summer, I will have TAed 15-150 (Principles of Functional Programming) for two consecutive semesters. As a Teaching Assistant, I
+										15-150, Principles of Functional Programming, is a class that uses the language SML and emphasizes recursive thinking, with applications in academia and web development. 
+										At the end of this summer, I will have TAed 15-150 (Principles of Functional Programming) for two consecutive semesters. 
+										
+										<br><br>As a Teaching Assistant, I
 										develop weekly lesson plans and teach 90 minute labs on the topics of Functional Programming that are taught, which have a wide range of uses in both
 										academia and conventional industry languages. These topics include Higher Order Functions, Continuation Passing Style and Induction. In addition to this, 
 										I have contributed to the GitHub repositories for course material, including updating homeworks and labs in LaTeX and playtesting existing homeworks. Finally,
