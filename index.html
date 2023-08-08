@@ -70,14 +70,15 @@
 									<li>
 										<strong>SDE Intern @ Amazon AWS</strong>
 										<br><i>May 2022 - August 2022</i>
-										<br><br>The project that I was assigned to this summer was to enhance the MQTT Test Client, which was done using React, Redux and TypeScript. 
-										Firstly, I had to fix two bugs present in the client. The first bug was an issue with the 
-										client failing to reconnect after a period of time; after determining that the issue was most 
-										probably the possible chance that the keepalive timer of 5 minutes and the session ID expiry 
-										of 5 minutes could intersect and cause an expiry before the keepalive check happened, I 
-										updated both the keepalive time and the reconnecting time to ensure that the client would 
-										always be active while the tab was being used. The second bug turned out to be user error 
-										of sending various data through the test client, but working on the bug helped me understand 
+										<br><br>The project that I was assigned to this summer was to enhance the MQTT Test Client, 
+										which was done using React, Redux and TypeScript. Firstly, I had to fix two bugs present in 
+										the client. The first bug was an issue with the client failing to reconnect after a period of 
+										time; after determining that the issue was most probably the possible chance that the keepalive 
+										timer of 5 minutes and the session ID expiry of 5 minutes could intersect and cause an expiry 
+										before the keepalive check happened, I updated both the keepalive time and the reconnecting 
+										time to ensure that the client would always be active while the tab was being used. This 
+										resolved nearly 100% of reconnection issues. The second bug turned out to be user error of 
+										sending various data through the test client, but working on the bug helped me understand 
 										how to send data properly through the client.
 
 										<br><br>My main feature was working on constructing a payload that would save its own state 
@@ -88,8 +89,7 @@
 										and in the parts of the test client that allowed for changes to be made to the payload, I 
 										added checks and dispatches to ensure the information in the store would always be up to date. 
 										This also involved changing the publishing flow of messages to the test client. I was able 
-										to finish my project by thoroughly testing each component I made and presenting to the rest 
-										of the AWS IoT.
+										to finish my project by thoroughly testing each component I made with Jest and presenting to AWS leadership.
 									</li>
 									<li>
 										<strong>15-213 Head TA @ CMU CS</strong>
